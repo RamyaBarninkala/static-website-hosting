@@ -1,33 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My AWS Static Website</title>
-  <link rel="stylesheet" href="style-v2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="My Cloud and DevOps Engineering Portfolio">
+
+    <title>Ramya | Cloud & DevOps Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>🚀 Welcome to My AWS Website</h1>
-    <p>
-      This static website is hosted on <b>AWS S3</b> and delivered securely using
-      <b>CloudFront + HTTPS</b>.
-    </p>
+    <!-- Navigation Bar -->
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="brand" href="#home">RB<span>.</span></a>
 
-    <div class="card">
-      <h2>Technologies Used</h2>
-      <ul>
-        <li>AWS S3</li>
-        <li>Amazon CloudFront</li>
-        <li>HTML & CSS</li>
-      </ul>
-    </div>
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+                ☰
+            </button>
 
-    <footer>
-      <p>© 2026 | Created by Ramya</p>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section class="hero container" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">
+                    B.Tech CSE | Aspiring Cloud / DevOps Engineer
+                </p>
+
+                <h1>
+                    Hi, I'm <span>Ramya</span>.
+                </h1>
+
+                <h2>
+                    I build, automate, and deploy cloud-based solutions.
+                </h2>
+
+                <p class="intro">
+                    I'm a final-year Computer Science
+                    student learning cloud infrastructure, automation,
+                    containers, and application deployment.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button primary">
+                        Explore Projects
+                    </a>
+
+                    <a href="#contact" class="button secondary">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="orb">☁</div>
+
+                <p class="card-label">CURRENT FOCUS</p>
+
+                <h3>Cloud + DevOps</h3>
+
+                <div class="pill-list">
+                    <span>AWS</span>
+                    <span>Linux</span>
+                    <span>Docker</span>
+                    <span>Python</span>
+                    <span>CI/CD</span>
+                </div>
+
+                <p class="card-note">
+                    Learning by building hands-on projects.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="section container" id="about">
+
+            <div class="section-heading">
+                <p class="eyebrow">A little about me</p>
+                <h2>About <span>Me</span></h2>
+            </div>
+
+            <div class="about-panel">
+                <p>
+                   I am a Computer Science Engineering student passionate about Cloud Computing, DevOps, and Automation. I have hands-on experience working with AWS services, Docker, Jenkins, Terraform, Ansible, and Linux. 
+                </p>
+
+                <p>
+                    I enjoy building cloud-based projects, automating deployment workflows, and learning new technologies to improve application reliability and efficiency. Through my projects and internship experience, I have gained practical knowledge of cloud infrastructure, CI/CD pipelines, and application deployment.
+                </p>
+
+                <p>
+                   I am continuously improving my technical skills and looking for opportunities to grow as a Cloud/DevOps Engineer while contributing to real-world projects.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section container" id="skills">
+
+            <div class="section-heading">
+                <p class="eyebrow">Technologies I work with</p>
+                <h2>Technical <span>Skills</span></h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <h3>Cloud</h3>
+                    <p>
+                        AWS, GCP, EC2, S3, IAM, VPC, Lambda,CloudFront.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>DevOps</h3>
+                    <p>
+                        Docker, Jenkins, Git, GitHub, Terraform, Ansible
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Programming</h3>
+                    <p>
+                        Python, Shell Scripting, SQL
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Systems</h3>
+                    <p>
+                        Linux, Networking Fundamentals, Cloud Monitoring
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section container" id="projects">
+
+            <div class="section-heading">
+                <p class="eyebrow">My hands-on work</p>
+                <h2>Featured <span>Projects</span></h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+
+                    <div class="project-icon">☁</div>
+
+                    <p class="project-type">CLOUD | AWS</p>
+
+                    <h3>
+                        Static Website Hosting using AWS
+                    </h3>
+
+                    <p>
+                        Hosted a static website using Amazon S3 and CloudFront with HTTPS support and global content delivery.
+                    </p>
+
+                    <div class="tags">
+                        <span>Amazon S3</span>
+                        <span>CloudFront</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+
+                    <div class="project-icon">⚙</div>
+
+                    <p class="project-type">DEVOPS | CI/CD</p>
+
+                    <h3>
+                        Automated CI/CD Pipeline
+                    </h3>
+
+                    <p>
+                        Designed an automated CI/CD pipeline using Jenkins and GitHub to streamline the build and deployment process. Used Docker and AWS services as part of the deployment workflow.
+                    </p>
+
+                    <div class="tags">
+                        <span>AWS</span>
+                        <span>Jenkins</span>
+                        <span>Docker</span>
+                        <span>Terraform</span>
+                        <span>GitHub</span>
+                    </div>
+
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <div class="project-icon">◉</div>
+
+                    <p class="project-type">PYTHON | AWS</p>
+
+                    <h3>
+                        Smart Attendance System
+                    </h3>
+
+                    <p>
+                        Developed a facial-recognition-based attendance system using Python and AWS services to recognize students and store attendance-related data.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>AWS Rekognition</span>
+                        <span>AWS Lambda</span>
+                        <span>S3</span>
+                        <span>DynamoDB</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Resume Section -->
+        <section class="section container resume-section">
+
+            <div>
+                <p class="eyebrow">Want to know more?</p>
+
+                <h2>View My <span>Resume</span></h2>
+
+                <p class="muted">
+                    Open my resume to learn more about my education,
+                    skills, and projects.
+                </p>
+            </div>
+
+            <a
+                href="Ramya5_Resume.pdf"
+                target="_blank"
+                rel="noopener"
+                class="button primary">
+                View Resume ↗
+            </a>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section container" id="contact">
+
+            <div class="section-heading">
+                <p class="eyebrow">Let's connect</p>
+                <h2>Contact <span>Me</span></h2>
+            </div>
+
+            <div class="contact-panel">
+
+                <p>
+                    I'm interested in opportunities related to
+                    Cloud Engineering and DevOps.
+                </p>
+
+                <div class="contact-links">
+
+                    <a
+                        href="https://github.com/RamyaBarninkala"
+                        target="_blank"
+                        rel="noopener">
+                        GitHub ↗
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/ramya-b-799533291/"
+                        target="_blank"
+                        rel="noopener">
+                        LinkedIn ↗
+                    </a>
+
+                    <a href="mailto:your.ramyabarninkala5@gmail.com">
+                        Email ↗
+                    </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <p>
+                © <span id="year"></span> Ramya
+            </p>
+
+            <a href="#home">Back to Top ↑</a>
+
+        </div>
     </footer>
-  </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
-
